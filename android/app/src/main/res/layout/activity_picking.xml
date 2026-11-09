@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparación de pedidos"
+            android:textColor="#0D47A1"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Localiza y recoge los productos del pedido"
+            android:textColor="#607D8B"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPickingPedido"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:hint="Número de pedido"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etPickingCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:hint="Código del producto"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnBuscarPicking"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="BUSCAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEscanearPicking"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#EF6C00"
+            android:text="ESCANEAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvProductoPicking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:text="Primero busca un producto"
+            android:textColor="#455A64"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvIndicacionUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#E3F2FD"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="La ubicación aparecerá aquí"
+            android:textColor="#0D47A1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCantidadPicking"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:hint="Cantidad solicitada"
+            android:inputType="number"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnConfirmarPicking"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#2E7D32"
+            android:enabled="false"
+            android:text="CONFIRMAR PRODUCTO RECOGIDO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCancelarPicking"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#455A64"
+            android:text="VOLVER AL MENÚ"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

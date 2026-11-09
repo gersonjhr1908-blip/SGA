@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recepción de productos"
+            android:textColor="#08C"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Registra la mercadería recibida"
+            android:textColor="#607D8B"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etRecepcionCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:hint="Código del producto"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnBuscarRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="BUSCAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEscanearRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#EF6C00"
+            android:text="ESCANEAR CÓDIGO"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvProductoRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:text="Primero busca un producto"
+            android:textColor="#455A64"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etCantidadRecibida"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:hint="Cantidad recibida"
+            android:inputType="number"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etRecepcionLote"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:hint="Número de lote"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etRecepcionVencimiento"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:hint="Vencimiento (dd/mm/aaaa)"
+            android:inputType="date"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnConfirmarRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2E7D32"
+            android:enabled="false"
+            android:text="CONFIRMAR RECEPCIÓN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCancelarRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#455A64"
+            android:text="VOLVER AL MENÚ"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

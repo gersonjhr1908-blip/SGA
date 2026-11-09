@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auditoría de inventario"
+            android:textColor="#0D47A1"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Compara el sistema con el conteo físico"
+            android:textColor="#607D8B"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAuditoriaCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:hint="Código del producto"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnBuscarAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="BUSCAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEscanearAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#EF6C00"
+            android:text="ESCANEAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvProductoAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:text="Primero busca un producto"
+            android:textColor="#455A64"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etConteoFisico"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:hint="Cantidad encontrada físicamente"
+            android:inputType="number"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnCalcularDiferencia"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#455A64"
+            android:enabled="false"
+            android:text="CALCULAR DIFERENCIA"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvResultadoAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#FFF8E1"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="El resultado aparecerá aquí"
+            android:textColor="#795548"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMotivoAjuste"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:hint="Motivo de la diferencia"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnConfirmarAjuste"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#C62828"
+            android:enabled="false"
+            android:text="CONFIRMAR AJUSTE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnVolverAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#455A64"
+            android:text="VOLVER"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

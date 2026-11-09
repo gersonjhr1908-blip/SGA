@@ -1,0 +1,16 @@
+.gradle/
+.idea/
+.kotlin/
+build/
+local.properties
+*.iml
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pem
+*.db
+*.sqlite*
+google-services.json
+keystore.properties

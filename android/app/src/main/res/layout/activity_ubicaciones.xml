@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación de productos"
+            android:textColor="#0D47A1"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Consulta y actualiza la posición del producto"
+            android:textColor="#607D8B"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etUbicacionCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:hint="Código del producto"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnBuscarUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="BUSCAR PRODUCTO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEscanearUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#EF6C00"
+            android:text="ESCANEAR CÓDIGO"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvProductoUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:text="Primero busca un producto"
+            android:textColor="#455A64"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Nueva ubicación"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNuevaUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:hint="Ejemplo: D-03-02"
+            android:inputType="textCapCharacters"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Formato recomendado: ZONA-PASILLO-ESTANTE"
+            android:textColor="#78909C"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnActualizarUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#2E7D32"
+            android:enabled="false"
+            android:text="ACTUALIZAR UBICACIÓN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnVolverUbicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#455A64"
+            android:text="VOLVER AL MENÚ"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

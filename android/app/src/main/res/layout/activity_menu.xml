@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FA"
+    android:fillViewport="true"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textColor="#0D47A1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rol: Administrador"
+            android:textColor="#607D8B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Operaciones del almacén"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRecepcion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1565C0"
+            android:text="RECEPCIÓN DE PRODUCTOS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnUbicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="UBICACIONES"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnPicking"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="PREPARACIÓN DE PEDIDOS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDespacho"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="DESPACHO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="PRODUCTOS E INVENTARIO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:text="AUDITORÍA DE INVENTARIO"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="HISTORIAL DE MOVIMIENTOS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnAdministrarUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#37474F"
+            android:text="ADMINISTRAR USUARIOS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#C62828"
+            android:text="CERRAR SESIÓN"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
